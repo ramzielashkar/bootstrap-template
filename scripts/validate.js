@@ -12,6 +12,7 @@ let validate = () => {
   const phone = phoneinput.value;
   const message = msginput.value;
 
+  // Validating full name input
   if(name.length<5){
     error.classList.remove("valid");
     const div = document.createElement("div");
@@ -19,6 +20,7 @@ let validate = () => {
     error.appendChild(div);
   }
 
+  // Validating Email
   let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
   if(regex.test(email)){
     const f_email = email.split('@');
@@ -43,6 +45,37 @@ let validate = () => {
     error.appendChild(div4);
   }
 
+  // Validating phone number
+const phone_code = phone.substring(0,4);
+
+if(phone_code == "+961"){
+  if(phone.substring(4,5)==3 && phone.substring(4).length!=7){
+    error.classList.remove("valid");
+    const div6 = document.createElement("div");
+    div6.textContent = "Error! Phone Number should have 7 characters after '+961'.";
+    error.appendChild(div6);
+  }
+  else if(phone.substring(4,5)==7 && phone.substring(4).length!=8){
+    error.classList.remove("valid");
+    const div7 = document.createElement("div");
+    div7.textContent = "Error! Phone Number should have 8 characters after '+961'.";
+    error.appendChild(div7);
+  }
+}
+else{
+  error.classList.remove("valid");
+  const div8 = document.createElement("div");
+  div8.textContent = "Error! Invalid Phone Number, it might start with '+961'.";
+  error.appendChild(div8);
+}
+
+// Validating message
+if(message.length<100){
+  error.classList.remove("valid");
+  const div9 = document.createElement("div");
+  div9.textContent = "Error! Message should contain at least 100 characters.";
+  error.appendChild(div9);
+}
 
 };
 
