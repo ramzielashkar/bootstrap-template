@@ -255,8 +255,55 @@ margin-right: 1rem;
   border: 0.125rem solid transparent;
   border-radius: 0.5rem;
 }
+.footer{
+  padding: 6rem 0;
+  background-color: #2c3e50;
+}
+.footer-content{
+  justify-content: space-around;
+}
+.location, .around, .freelance{
+  flex-direction: column;
+  align-items: center;
 
 
+}
+.footer-title{
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.location p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: white;
+    width:70%;
+    text-align: center;
+}
+
+.freelance p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: white;
+    width:55%;
+    text-align: center;
+}
+.freelance a{
+  color:green;
+}
+
+.icons{
+  justify-content: space-evenly;
+  width :100px;
+  color: white;
+}
+
+.icons i{
+  border: 1px solid white;
+  border-radius: 50px;
+}
   /* Media queries */
 @media only screen and (max-width : 1000px) {
   .nav-items{
