@@ -351,6 +351,34 @@ font-weight: 400;
 .valid{
   display: none;
 }
+
+/* showdata page styling */
+
+/* display database data section styling */
+.display{
+  padding: 8rem 0;
+}
+.data{
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.row{
+  justify-content: space-evenly;
+  color: rgb(26, 188, 156);
+}
+
+.column{
+  width: 25%;
+  text-align: center;
+  border: 2px solid rgb(44, 62, 80);
+  padding: 1rem 0;
+
+}
+.column-title{
+  font-size: 1.3rem;
+}
+
+
   /* Media queries */
 @media only screen and (max-width : 1000px) {
   .nav-items{
