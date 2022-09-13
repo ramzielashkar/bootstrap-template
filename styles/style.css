@@ -368,11 +368,13 @@ font-weight: 400;
 }
 
 .column{
+  display: flex;
+  flex-direction: column;
   width: 25%;
   text-align: center;
   border: 2px solid rgb(44, 62, 80);
   padding: 1rem 0;
-
+  justify-content: center;
 }
 .column-title{
   font-size: 1.3rem;
