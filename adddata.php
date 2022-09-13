@@ -1,6 +1,9 @@
 <?php
+header("Access-Control-Allow-Origin:*");
+header("Access-Control-Allow-Headers:*");
 // Creating connection
 include("connection.php");
+
 
 // Getting POST inputs
 $name = $_POST["name"];
