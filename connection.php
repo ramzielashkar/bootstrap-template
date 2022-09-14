@@ -1,4 +1,5 @@
 <?php
+// Connecting my API to my database
 $host = "localhost";
 $db_user = "root";
 $db_pass = null;
